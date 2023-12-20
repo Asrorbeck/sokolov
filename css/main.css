@@ -39,6 +39,10 @@ html {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .hero {
   position: relative;
   background-color: #0C2C65;
@@ -131,7 +135,6 @@ html {
 
 .about {
   position: relative;
-  height: 100vh;
   background: url("../../img/about-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -194,4 +197,102 @@ html {
 .about__ribbon-img {
   width: 100%;
   margin-top: 20px;
+}
+
+.calendar {
+  position: relative;
+  background: url("../../img/ring.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.calendar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 44, 101, 0.88);
+}
+.calendar__container {
+  z-index: 1;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.calendar__container::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 54px;
+  height: 222px;
+  background-image: url("../../img/star-little-right.png");
+  background-repeat: no-repeat;
+  right: 0;
+  top: calc(50% + 85px);
+}
+.calendar__date {
+  text-align: center;
+  font-family: Georgia;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background: linear-gradient(180deg, #FFCF26 0%, #D9BE5F 47.4%, #7D6615 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.calendar__img {
+  width: 100%;
+}
+.calendar__item {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+}
+.calendar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.calendar__month-week {
+  text-align: center;
+  font-family: Belissimo;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  background: linear-gradient(180deg, #FFCF26 0%, #D9BE5F 43.75%, #7D6615 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.calendar__month-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.calendar__month-year {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.18px;
+}
+.calendar__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 23px;
 }/*# sourceMappingURL=main.css.map */
