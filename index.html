@@ -21,6 +21,43 @@
 
 <body>
 
+    <header>
+        <div class="navbar">
+            <div class="menu-button" onclick="toggleMenu()">
+                <span class="menu-icon">&#9776;</span>
+            </div>
+
+            <a href="#" class="navbar__logo">TAKLIFNOMA</a>
+
+            <button id="navbar__btn" class="navbar__btn"><img width="20" id="music-icon" src="./img/mute.svg"
+                    alt="mute music">
+            </button>
+        </div>
+
+        <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+        <div class="menu">
+            <div class="menu-header">
+                <span class="close-button" onclick="toggleMenu()">&times;</span>
+            </div>
+
+            <ul>
+
+                <li><a href="#invit">TAKLIF ETAMIZ!</a></li>
+
+                <li><a href="#date">QACHON?</a></li>
+
+                <li><a href="#adres">QAYERDA?</a></li>
+
+                <li><a href="#program">NIMALAR BO’LADI?</a></li>
+
+                <li><a href="#dres">KIYINISH USLUBI QANDAY?</a></li>
+
+                <li><a href="#time__remaining">QANCHA VAQT QOLDI?</a></li>
+            </ul>
+        </div>
+    </header>
+
     <main class="main">
         <section class="hero">
             <div class="container">
@@ -187,6 +224,20 @@
             </div>
         </section>
     </main>
+
+    <audio id="background-music" style="display: none" loop muted>
+        <source src="./music/music.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Musiqa bilan ochilsinmi?</p>
+            <button class="modal-button" id="yesBtn">Ha</button>
+            <button class="modal-button" id="noBtn">Yo'q</button>
+        </div>
+    </div>
+
 </body>
 
 <script src="./js/index.js"></script>
@@ -196,5 +247,7 @@
 <script>
     AOS.init();
 </script>
+
+
 
 </html>
