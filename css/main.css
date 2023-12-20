@@ -204,6 +204,7 @@ ul {
   background: url("../../img/ring.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -302,6 +303,7 @@ ul {
   background: url("../../img/map-bg.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 30px;
   padding-bottom: 70px;
 }
@@ -374,6 +376,7 @@ ul {
   background: url("../../img/program-bg.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 90px;
   padding-bottom: 70px;
 }
