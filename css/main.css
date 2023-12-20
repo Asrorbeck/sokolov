@@ -138,7 +138,7 @@ ul {
   background: url("../../img/about-bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 800px;
+  background-size: cover;
 }
 .about::after {
   content: "";
