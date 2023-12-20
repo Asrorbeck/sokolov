@@ -135,6 +135,7 @@ ul {
 
 .about {
   position: relative;
+  height: 100vh;
   background: url("../../img/about-bg.png");
   background-repeat: no-repeat;
   background-position: center;
