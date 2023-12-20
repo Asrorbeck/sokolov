@@ -7,3 +7,12 @@
   font-weight: 400;
   src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Belissimo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Belissimo-script.ttf') format('truetype');
+}

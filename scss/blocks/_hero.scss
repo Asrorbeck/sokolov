@@ -1,9 +1,7 @@
-.container {}
-
 .hero {
   position: relative;
   background-color: #0C2C65;
-  height: 100vh;
+  height: 550px;
   padding-top: 150px;
 
   &::after {
@@ -81,8 +79,6 @@
     font-weight: 600;
     line-height: normal;
   }
-
-  &__container {}
 
   &__subheader {
     color: #FFF;
