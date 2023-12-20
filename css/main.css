@@ -26,18 +26,10 @@ html {
   padding: 0;
 }
 
-.container {
-  max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .hero {
   position: relative;
   background-color: #0C2C65;
-  height: 100vh;
+  height: 500px;
   padding-top: 180px;
 }
 .hero::after {
@@ -51,9 +43,24 @@ html {
   background-image: url("../../img/ribbon.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100% 100%;
+}
+.hero::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 461px;
+  background-image: url("../../img/scissors.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  top: calc(0% + 220px);
 }
 .hero__header {
+  position: relative;
   color: #fff;
   text-align: center;
   font-family: "Montserrat";
@@ -62,11 +69,36 @@ html {
   line-height: normal;
   margin-bottom: 10px;
 }
+.hero__header::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 257px;
+  background-image: url("../../img/right.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  right: 0;
+  top: calc(0% - 100px);
+}
+.hero__header::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 112px;
+  height: 390px;
+  background-image: url("../../img/star-main-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  top: calc(0% + 75px);
+}
 .hero__body {
   color: #FFF;
   text-align: center;
   font-family: Montserrat;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 600;
   line-height: normal;
 }
@@ -74,7 +106,7 @@ html {
   color: #FFF;
   text-align: center;
   font-family: Montserrat;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 400;
 }
 .hero__dec {
