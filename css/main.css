@@ -626,7 +626,7 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 .time__subheader {
   color: #FFF;
@@ -637,7 +637,7 @@ a {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.2px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .time__hr {
   max-width: 250px;
