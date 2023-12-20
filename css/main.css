@@ -1,1 +1,85 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/* montserrat-alternates-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero {
+  position: relative;
+  background-color: #0C2C65;
+  height: 100vh;
+  padding-top: 180px;
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: calc(0% - 455px);
+  left: 0;
+  background-image: url("../../img/ribbon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.hero__header {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.hero__body {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: normal;
+}
+.hero__subheader {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 400;
+}
+.hero__dec {
+  background: linear-gradient(180deg, #FFCF26 0%, #D9BE5F 49.48%, #7E691C 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}/*# sourceMappingURL=main.css.map */
