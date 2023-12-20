@@ -41,7 +41,7 @@
     font-size: 30px;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 10px;
+    padding-bottom: 30px;
 
     &::after {
       position: absolute;
@@ -67,7 +67,7 @@
       background-repeat: no-repeat;
       background-position: center;
       left: 0;
-      top: calc(0% + 75px);
+      top: calc(0% + 140px);
     }
   }
 

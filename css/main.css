@@ -15,6 +15,15 @@
   font-weight: 400;
   src: url("../fonts/Belissimo-script.ttf") format("truetype");
 }
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v26-latin-600.woff2") format("woff2"), url("../fonts/montserrat-v26-latin-600.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 html {
   scroll-behavior: smooth;
 }
@@ -88,7 +97,7 @@ a {
   font-size: 30px;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 10px;
+  padding-bottom: 30px;
 }
 .hero__header::after {
   position: absolute;
@@ -113,7 +122,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   left: 0;
-  top: calc(0% + 75px);
+  top: calc(0% + 140px);
 }
 .hero__body {
   color: #FFF;
@@ -221,22 +230,24 @@ a {
   left: 0;
   background-color: rgba(12, 44, 101, 0.88);
 }
+.calendar::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 94px;
+  height: 222px;
+  background-image: url("../../img/123.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  z-index: 100;
+  top: calc(50% + 160px);
+}
 .calendar__container {
   z-index: 1;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
-}
-.calendar__container::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 94px;
-  height: 222px;
-  background-image: url("../../img/calendar-star.png");
-  background-repeat: no-repeat;
-  right: 0;
-  top: calc(50% + 155px);
 }
 .calendar__date {
   text-align: center;
@@ -459,6 +470,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
+  padding-top: 80px;
 }
 .program__hour {
   color: #FFF;
