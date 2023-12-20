@@ -182,17 +182,17 @@ ul {
 }
 .about__header {
   text-align: center;
-  font-family: "Belissimo";
+  font-family: Belissimo;
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
-  background: linear-gradient(180deg, #FFCF26 0%, #D9BE5F 2.4%, #7D6615 5.01%);
+  line-height: normal;
+  letter-spacing: 1.05px;
+  background: linear-gradient(180deg, #FFCF26 0%, #D9BE5F 43.75%, #7D6615 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-top: 50px;
-  margin-bottom: 25px;
+  padding-top: 30px;
 }
 .about__ribbon-img {
   width: 100%;
@@ -295,4 +295,174 @@ ul {
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 23px;
+}
+
+.map {
+  position: relative;
+  background: url("../../img/map-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 44, 101, 0.88);
+}
+.map__btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  margin-top: 15px;
+}
+.map__container {
+  z-index: 1;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.map__header {
+  text-align: center;
+  font-family: Belissimo;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.05px;
+  background: linear-gradient(180deg, #FFCF26 0%, #D9BE5F 43.75%, #7D6615 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+.map__iframe {
+  width: 100%;
+  height: 205px;
+}
+.map__subheader {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  margin-bottom: 20px;
+}
+
+.program {
+  position: relative;
+  background: url("../../img/program-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+.program::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(12, 44, 101, 0.88);
+}
+.program__body {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 200px;
+}
+.program__container {
+  z-index: 1;
+  position: relative;
+}
+.program__header {
+  text-align: center;
+  font-family: Belissimo;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  /* 100% */
+  letter-spacing: 1.05px;
+  background: linear-gradient(180deg, #FFCF26 0%, #D9BE5F 43.75%, #7D6615 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.program__hour {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+.program__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  padding-top: 70px;
+}
+.program__item::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.program__item::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 22px;
+  background-image: url("../../img/photo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: calc(0% + 13px);
+}
+.program__item:nth-child(2)::after {
+  height: 30px;
+  background-image: url("../../img/Gift.svg");
+  top: calc(0% + 8px);
+}
+.program__item:nth-child(3)::after {
+  width: 37px;
+  height: 24px;
+  background-image: url("../../img/Vector.svg");
 }/*# sourceMappingURL=main.css.map */
