@@ -17,6 +17,21 @@
     background-color: rgba(12, 44, 101, 0.88);
   }
 
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 108px;
+    height: 246px;
+    background-image: url('../../img/list.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    right: 0;
+    z-index: 1;
+    top: calc(50% + 130px);
+  }
+
   &__body {
     color: #FFF;
     text-align: center;

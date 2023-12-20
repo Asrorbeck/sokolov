@@ -7,6 +7,21 @@
   padding-top: 30px;
   padding-bottom: 100px;
 
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 69px;
+    height: 236px;
+    background-image: url('../../img/map-star.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+  }
+
 
   &::after {
     content: '';

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Asrorbek</title>
 </head>
 
@@ -20,21 +21,23 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__container">
-                    <p class="hero__header">ПРИГЛАШАЕМ <br> <span class="hero__dec">НА ЦЕРЕМОНИЮ <br> ОТКРЫТИЯ</span>
+                    <p data-aos="fade" data-aos-duration="2000" class="hero__header">ПРИГЛАШАЕМ <br> <span
+                            class="hero__dec">НА ЦЕРЕМОНИЮ <br> ОТКРЫТИЯ</span>
                     </p>
 
-                    <h2 class="hero__body">SOKOLOV</h2>
+                    <h2 data-aos="fade" data-aos-duration="2000" class="hero__body">SOKOLOV</h2>
 
-                    <p class="hero__subheader">UZBEKISTAN</p>
+                    <p data-aos="fade" data-aos-duration="2000" class="hero__subheader">UZBEKISTAN</p>
                 </div>
             </div>
         </section>
 
         <section class="about">
-            <div class="about__container">
+            <div class="about__container" data-aos="fade" data-aos-duration="2000">
                 <h2 class="about__header">Дорогой Друг!</h2>
 
-                <p class="about__body">Приглашаем Вас на торжественное открытие флагманского магазина SOKOLOV в
+                <p class="about__body" data-aos="fade" data-aos-duration="2000">Приглашаем Вас на торжественное открытие
+                    флагманского магазина SOKOLOV в
                     Ташкенте!
                     <br>
                     <br>
@@ -49,13 +52,13 @@
                     и высококлассной стали.
                 </p>
 
-                <img class="about__ribbon-img" src="./img/babochka.png" alt="">
+                <img data-aos="fade" data-aos-duration="2000" class="about__ribbon-img" src="./img/babochka.png" alt="">
             </div>
         </section>
 
         <section class="calendar">
-            <div class="calendar__container">
-                <div class="calendar__wrapper">
+            <div class="calendar__container" data-aos="fade" data-aos-duration="2000">
+                <div class="calendar__wrapper" data-aos="fade" data-aos-duration="2000">
                     <p class="calendar__month-week">Суббота</p>
 
                     <p class="calendar__date">23</p>
@@ -63,12 +66,12 @@
                     <p class="calendar__month-week">Декабря</p>
                 </div>
 
-                <div class="calendar__month-wrapper">
+                <div class="calendar__month-wrapper" data-aos="fade" data-aos-duration="2000">
                     <p class="calendar__month-year">Декабрь</p>
                     <p class="calendar__month-year">2023</p>
                 </div>
 
-                <ul class="calendar__list">
+                <ul class="calendar__list" data-aos="fade" data-aos-duration="2000">
                     <li class="calendar__item">Пн</li>
                     <li class="calendar__item">Вт</li>
                     <li class="calendar__item">Ср</li>
@@ -78,12 +81,12 @@
                     <li class="calendar__item">Вс</li>
                 </ul>
 
-                <img src="./img/calendar.png" alt="" class="calendar__img">
+                <img data-aos="fade" data-aos-duration="2000" src="./img/calendar.png" alt="" class="calendar__img">
             </div>
         </section>
 
         <section class="map">
-            <div class="map__container">
+            <div class="map__container" data-aos="fade" data-aos-duration="2000">
                 <h2 class="map__header">Локация</h2>
 
                 <p class="map__subheader">ТРЦ «Riviera», 1-этаж</p>
@@ -100,9 +103,9 @@
 
         <section class="program">
             <div class="program__container">
-                <h2 class="program__header">Программа <br> мероприятия</h2>
+                <h2 class="program__header" data-aos="fade" data-aos-duration="2000">Программа <br> мероприятия</h2>
 
-                <ul class="program__list">
+                <ul class="program__list" data-aos="fade" data-aos-duration="2000">
                     <li class="program__item">
                         <p class="program__hour">12:00</p>
 
@@ -125,12 +128,12 @@
         </section>
 
         <section class="time">
-            <div class="time__container">
+            <div class="time__container" data-aos="fade" data-aos-duration="2000">
                 <h2 class="time__header">Увидимся на открытии!</h2>
 
                 <p class="time__subheader">Ждём Вас через:</p>
 
-                <ul id="timer" class="time__list">
+                <ul id="timer" class="time__list" data-aos="fade" data-aos-duration="2000">
                     <li class="time__item">
                         <h3 id="days" class="time__time">00</h3>
 
@@ -156,7 +159,7 @@
                     </li>
                 </ul>
 
-                <div class="time__wrapper" data-aos="fade" data-aos-duration="3000">
+                <div class="time__wrapper" data-aos="fade" data-aos-duration="2000">
                     <a href="tel:+998955616161" class="time__social-link"><img src="./img/call.svg" alt=""></a>
 
                     <a href="https://t.me/le_invitations" class="time__social-link"><img src="./img/telegram.svg"
@@ -171,7 +174,7 @@
                     </a>
                 </div>
 
-                <hr class="time__hr">
+                <hr class="time__hr" data-aos="fade" data-aos-duration="2000">
 
                 <a href="https://me-qr.com/ru/link-list/raARUzAB/show" class="time__link">le_invitations</a>
 
@@ -182,7 +185,12 @@
     </main>
 </body>
 
-<!-- <script src="./js/snow.js"></script> -->
 <script src="./js/index.js"></script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
