@@ -3,7 +3,8 @@
   height: 100vh;
   background: url('../../img/about-bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: 800px;
 
   &::after {
     content: '';
@@ -30,8 +31,8 @@
   &__container {
     z-index: 1;
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
+    // padding-left: 20px;
+    // padding-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,5 +65,9 @@
     -webkit-text-fill-color: transparent;
     padding-top: 50px;
     margin-bottom: 25px;
+  }
+
+  &__ribbon-img {
+    width: 100%;
   }
 }
