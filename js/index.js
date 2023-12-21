@@ -84,3 +84,15 @@ function toggleMenu() {
   menu.classList.toggle('menu-open');
   overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
 }
+
+document.getElementById("openMaps").addEventListener("click", function () {
+  const address = "ТРЦ Riviera";
+
+  if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
+    // Open Yandex Maps on iOS
+    window.location.href = `https://maps.yandex.com/?text=${encodeURIComponent(address)}`;
+  } else if (/android/i.test(navigator.userAgent)) {
+    // Open Yandex Navigator on Android
+    window.location.href = `https://yandex.com/maps/?text=${encodeURIComponent(address)}`;
+  }
+});
