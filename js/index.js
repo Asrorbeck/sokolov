@@ -86,14 +86,13 @@ function toggleMenu() {
 }
 
 document.getElementById("openMaps").addEventListener("click", function () {
-  const latitude = 41.339703; // Replace with the actual latitude
-  const longitude = 69.254248; // Replace with the actual longitude
+  const address = "Riviera Mall";
 
   if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
     // Open Yandex Maps on iOS
-    window.location.href = `https://maps.yandex.com/?ll=${longitude},${latitude}`;
+    window.location.href = `https://maps.yandex.com/?text=${encodeURIComponent(address)}`;
   } else if (/android/i.test(navigator.userAgent)) {
     // Open Yandex Navigator on Android
-    window.location.href = `https://yandex.com/maps/?ll=${longitude},${latitude}`;
+    window.location.href = `https://yandex.com/maps/?text=${encodeURIComponent(address)}`;
   }
 });
