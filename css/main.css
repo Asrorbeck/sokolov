@@ -274,7 +274,7 @@ img {
   font-size: 26px;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .hero__header::after {
   position: absolute;
